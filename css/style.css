@@ -1,0 +1,78 @@
+.anim-box {
+	position: relative;
+	top: 50px;
+}
+.image {
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;	
+}
+.img-title {
+	width: 100px;
+	height: 100px;
+	margin-top: 130px;
+	margin-left: 650px;
+	animation-name: title;
+	animation-delay: 0.4s;
+	animation-duration: 3.5s;
+	animation-timing-function: linear;
+	animation-fill-mode: backwards;
+	animation-iteration-count: infinite;
+}
+.anim-1 {
+	position: absolute;  
+}
+.tom {
+	position: absolute;
+	width: 350px;
+	height: 250px;
+	margin-top: 230px;
+	animation-name: tom;
+	animation-delay: 0.3s;
+	animation-duration: 2.4s;
+	animation-timing-function: linear;
+	animation-fill-mode: backwards;
+	animation-iteration-count: infinite;
+}
+.jerry {
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	margin-top: 320px;
+	animation-name: jerry;
+	animation-delay: 0.3s;
+	animation-duration: 2.4s;
+	animation-timing-function: linear;
+	animation-fill-mode: backwards;
+	animation-iteration-count: infinite;
+}
+@keyframes title {
+	from {
+		opacity: 0.2;
+		width: 100px;
+	    height: 100px;
+	}
+	to {
+		opacity: 1;
+		width: 200px;
+	    height: 200px;
+	    transform: rotate(360deg);
+	}
+}
+@keyframes tom {
+	from {
+	    left: 20px;
+
+	}
+	to {
+        left: 900px;
+	}
+}
+@keyframes jerry {
+	from {
+		left: 500px;
+	}
+	to {
+		left: 1200px;
+	}
+}
